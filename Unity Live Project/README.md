@@ -12,7 +12,7 @@ The new level, Hole03, was provided with a very simple course consisting of only
 ## Systems Stories
 As part of the overall game, many systems would need to be implemented that can also be extended and scaled easily. In order to provide sound to the game, I implemented the Sound class and AudioManager singleton pattern. Credit to Brackeys for the tutorial video on how to implement the Sound class and AudioManager: https://www.youtube.com/watch?v=6OT43pvUyfY
 
-The sound class gives a baasic structure to add clips of audio and adjust the volume and pitch. Could easily be extended to include other Unity and audio properties.
+The sound class gives a basic structure to add clips of audio and adjust the volume and pitch. Could easily be extended to include other Unity and audio properties.
 * [Sound Class](https://github.com/brandinhisaw/Tech-Academy-Live-Projects/blob/main/Unity%20Live%20Project/C%23%20Scripts/Sound.cs)
 
 [System.Serializable]
@@ -39,6 +39,8 @@ public class Sound
 }
 
 The AudioManager stores an array of Sounds and can be accessed through an instance of the class and can be attached to a designated AudioManager object in Unity. The Sound   array can be expanded and added to in the Unity Editor. This allows you to quickly add sound files, edit their volume and pitch, and create clips that can be called with the Play method. The awake method of the AudioManager script will assign each sound with their own AudioSource component.
+
+![image](https://user-images.githubusercontent.com/26210440/118733697-9df4ce80-b7f1-11eb-9aaf-619cc3eb8af5.png)
 
 * [AudioManager](https://github.com/brandinhisaw/Tech-Academy-Live-Projects/blob/main/Unity%20Live%20Project/C%23%20Scripts/AudioManager.cs)
 
